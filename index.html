@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+
+    <!-- import css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container vh-100 d-flex align-items-center">
+        <div class="row justify-content-center w-100">
+            <div class="col-6">
+                <h1>
+                    Temperature Calculator
+                </h1>
+                <p>C : <input id="celsius" class="form-control" type="text" placeholder="Input celsius" aria-label="default input example"></p>
+                <p>F : <input id="fahrenheit" class="form-control" type="text" placeholder="Input fahrenheit" aria-label="default input example"></p>
+                <p>K : <input id="kelvin" class="form-control" type="text" placeholder="Input kelvin" aria-label="default input example"></p>
+                <button type="button" class="btn btn-primary" onclick="calculateTemperature()">Calculator</button>
+                <button type="reset" class="btn btn-primary" onclick="resetValues()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- import js -->
+    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
